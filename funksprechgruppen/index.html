@@ -1,1 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Sprechgruppen-Suche</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <header class="topbar">
+    <div class="title">
+      <span class="title-main">Sprechgruppen</span>
+      <span class="title-sub">Suche für Digitalfunk</span>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <section class="card search-card">
+      <div class="field">
+        <label for="searchInput">Suche</label>
+        <div class="search-wrapper">
+          <span class="icon">🔍</span>
+          <input id="searchInput" type="search"
+                 placeholder="Nummer oder Name eingeben… (z.B. 8042 oder HS-BM1)">
+        </div>
+      </div>
+
+      <div class="filters">
+        <div class="field">
+          <label for="filterGruppe">Gruppe</label>
+          <select id="filterGruppe">
+            <option value="">Alle</option>
+            <option value="HS">Hubschrauber (HS)</option>
+            <option value="BOS">BOS</option>
+            <option value="FW">Feuerwehr</option>
+            <option value="KHD">KHD</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="filterBundesland">Bundesland</label>
+          <select id="filterBundesland">
+            <option value="">Alle</option>
+            <option value="AUT">Österreichweit</option>
+            <option value="BGLD">Burgenland</option>
+            <option value="KTN">Kärnten</option>
+            <option value="NOE">Niederösterreich</option>
+            <option value="OOE">Oberösterreich</option>
+            <option value="SBG">Salzburg</option>
+            <option value="STM">Steiermark</option>
+            <option value="TIR">Tirol</option>
+            <option value="VBG">Vorarlberg</option>
+            <option value="W">Wien</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="sortSelect">Sortierung</label>
+        <select id="sortSelect">
+          <option value="nummer">Nummer (aufsteigend)</option>
+          <option value="name">Name (A–Z)</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="card status-card">
+      <div id="statusText">Lade Sprechgruppen…</div>
+    </section>
+
+    <section class="card results-card">
+      <div class="results-header">
+        <span id="resultsCount">0 Treffer</span>
+      </div>
+      <ul id="resultsList" class="results-list">
+        <!-- Einträge werden per JS eingefügt -->
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
