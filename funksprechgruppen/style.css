@@ -1,1 +1,263 @@
+:root {
+  --bg: #05060a;
+  --bg-card: #10121a;
+  --bg-elevated: #171927;
+  --accent: #3b82f6;
+  --accent-soft: rgba(59,130,246,0.15);
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+  --border-subtle: #1f2933;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --shadow-soft: 0 18px 45px rgba(0,0,0,0.45);
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #111827 0, #020617 40%, #000 100%);
+  color: var(--text);
+}
+
+/* Topbar */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(20px);
+  background: linear-gradient(to right, rgba(15,23,42,0.9), rgba(8,47,73,0.9));
+  border-bottom: 1px solid rgba(148,163,184,0.25);
+  padding: 10px 18px 12px;
+}
+
+.title-main {
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+}
+
+.title-sub {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Layout */
+
+.page {
+  padding: 14px 12px 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: radial-gradient(circle at top left, #1f2937 0, #020617 55%);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(148,163,184,0.18);
+  padding: 14px 12px;
+  margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: 18px 16px 32px;
+  }
+  .card {
+    padding: 16px 18px;
+  }
+}
+
+/* Form controls */
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #020617;
+  border: 1px solid rgba(148,163,184,0.5);
+  padding: 4px 10px;
+}
+
+.search-wrapper:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(37,99,235,0.5);
+}
+
+.search-wrapper .icon {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+input[type="search"],
+select {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-size: 14px;
+  padding: 6px 2px;
+}
+
+select {
+  width: 100%;
+  background: #020617;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(148,163,184,0.5);
+  padding: 7px 8px;
+  appearance: none;
+}
+
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(37,99,235,0.5);
+}
+
+/* Filters */
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 8px 0 6px;
+}
+
+@media (max-width: 480px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Status */
+
+.status-card {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Results */
+
+.results-card {
+  padding-top: 10px;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: calc(100vh - 260px);
+  overflow-y: auto;
+}
+
+/* Scrollbar leicht sichtbar auf Desktop */
+
+.results-list::-webkit-scrollbar {
+  width: 6px;
+}
+.results-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.results-list::-webkit-scrollbar-thumb {
+  background: rgba(148,163,184,0.4);
+  border-radius: 999px;
+}
+
+.result-item {
+  background: rgba(15,23,42,0.9);
+  border-radius: 12px;
+  padding: 8px 9px;
+  margin-bottom: 6px;
+  border: 1px solid rgba(31,41,55,0.9);
+  display: flex;
+  flex-direction: column;
+}
+
+.result-item:last-child {
+  margin-bottom: 0;
+}
+
+.result-mainline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+
+.result-number {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.result-name {
+  font-size: 14px;
+  color: #e5e7eb;
+  flex: 1;
+  text-align: right;
+}
+
+.result-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 3px;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(148,163,184,0.4);
+  color: var(--text-muted);
+}
+
+.badge-accent {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: #dbeafe;
+}
+
+/* Small helper for "keine Treffer" */
+
+.no-results {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 10px 0 4px;
+}
