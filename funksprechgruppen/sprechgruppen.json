@@ -1,11 +1,9 @@
 [
-  // --- AUT (österreichweit) – Hubschrauber Österreich ---
-  { "nummer": "8010", "name": "HS-OST",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "AUT", "bereich": null },   // HS Österreich Ost
-  { "nummer": "8009", "name": "HS-MITTE", "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "AUT", "bereich": null },   // HS Österreich Mitte
-  { "nummer": "8008", "name": "HS-WEST",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "AUT", "bereich": null },   // HS Österreich West
+  { "nummer": "8010", "name": "HS-OST",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "AUT", "bereich": null },
+  { "nummer": "8009", "name": "HS-MITTE", "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "AUT", "bereich": null },
+  { "nummer": "8008", "name": "HS-WEST",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "AUT", "bereich": null },
 
-  // --- BGLD – Hubschrauber Burgenland ---
-  { "nummer": "8110", "name": "HS-BGLD1", "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "BGLD", "bereich": null },  // Burgenland
+  { "nummer": "8110", "name": "HS-BGLD1", "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "BGLD", "bereich": null },
   { "nummer": "8111", "name": "HS-E1",    "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "BGLD", "bereich": null },
   { "nummer": "8112", "name": "HS-EU1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "BGLD", "bereich": null },
   { "nummer": "8113", "name": "HS-GS1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "BGLD", "bereich": null },
@@ -15,8 +13,7 @@
   { "nummer": "8117", "name": "HS-OP1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "BGLD", "bereich": null },
   { "nummer": "8118", "name": "HS-OW1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "BGLD", "bereich": null },
 
-  // --- KTN – Hubschrauber Kärnten ---
-  { "nummer": "8210", "name": "HS-KTN1",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "KTN", "bereich": null },   // Kärnten
+  { "nummer": "8210", "name": "HS-KTN1",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "KTN", "bereich": null },
   { "nummer": "8211", "name": "HS-FE1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "KTN", "bereich": null },
   { "nummer": "8212", "name": "HS-HE1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "KTN", "bereich": null },
   { "nummer": "8213", "name": "HS-K1",    "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "KTN", "bereich": null },
@@ -28,8 +25,7 @@
   { "nummer": "8219", "name": "HS-VL1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "KTN", "bereich": null },
   { "nummer": "8229", "name": "HS-WO1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "KTN", "bereich": null },
 
-  // --- NOE – Hubschrauber Niederösterreich ---
-  { "nummer": "8310", "name": "HS-NOE1",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "NOE", "bereich": null },  // Niederösterreich
+  { "nummer": "8310", "name": "HS-NOE1",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "NOE", "bereich": null },
   { "nummer": "8311", "name": "HS-AM1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "NOE", "bereich": null },
   { "nummer": "8312", "name": "HS-BL1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "NOE", "bereich": null },
   { "nummer": "8313", "name": "HS-BN1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "NOE", "bereich": null },
@@ -57,8 +53,7 @@
   { "nummer": "8336", "name": "HS-ZT1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "NOE", "bereich": null },
   { "nummer": "8337", "name": "HS-SW-FH1","ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "NOE", "bereich": null },
 
-  // --- OOE – Hubschrauber Oberösterreich ---
-  { "nummer": "8410", "name": "HS-OOE1",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "OOE", "bereich": null },  // Oberösterreich
+  { "nummer": "8410", "name": "HS-OOE1",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "OOE", "bereich": null },
   { "nummer": "8411", "name": "HS-BR1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "OOE", "bereich": null },
   { "nummer": "8412", "name": "HS-EF1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "OOE", "bereich": null },
   { "nummer": "8413", "name": "HS-FR1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "OOE", "bereich": null },
@@ -78,8 +73,7 @@
   { "nummer": "8427", "name": "HS-WE1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "OOE", "bereich": null },
   { "nummer": "8428", "name": "HS-WL1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "OOE", "bereich": null },
 
-  // --- SBG – Hubschrauber Salzburg ---
-  { "nummer": "8510", "name": "HS-SBG1",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "SBG", "bereich": null },  // Salzburg
+  { "nummer": "8510", "name": "HS-SBG1",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "SBG", "bereich": null },
   { "nummer": "8513", "name": "HS-S1",    "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "SBG", "bereich": null },
   { "nummer": "8511", "name": "HS-HA1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "SBG", "bereich": null },
   { "nummer": "8512", "name": "HS-JO1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "SBG", "bereich": null },
@@ -87,8 +81,7 @@
   { "nummer": "8515", "name": "HS-TA1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "SBG", "bereich": null },
   { "nummer": "8516", "name": "HS-ZE1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "SBG", "bereich": null },
 
-  // --- STM – Hubschrauber Steiermark ---
-  { "nummer": "8006", "name": "HS-STM1",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "STM", "bereich": null },  // Hubschrauber Steiermark
+  { "nummer": "8006", "name": "HS-STM1",  "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "STM", "bereich": null },
   { "nummer": "8042", "name": "HS-BM1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "STM", "bereich": null },
   { "nummer": "8044", "name": "HS-DL1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "STM", "bereich": null },
   { "nummer": "8040", "name": "HS-G1",    "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "STM", "bereich": null },
@@ -104,8 +97,7 @@
   { "nummer": "8056", "name": "HS-VO1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "STM", "bereich": null },
   { "nummer": "8057", "name": "HS-WZ1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "STM", "bereich": null },
 
-  // --- TIR – Hubschrauber Tirol ---
-  { "nummer": "8710", "name": "HS-TIROL1","ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "TIR", "bereich": null },  // Tirol
+  { "nummer": "8710", "name": "HS-TIROL1","ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "TIR", "bereich": null },
   { "nummer": "8711", "name": "HS-I1",    "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "TIR", "bereich": null },
   { "nummer": "8712", "name": "HS-IL1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "TIR", "bereich": null },
   { "nummer": "8713", "name": "HS-IM1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "TIR", "bereich": null },
@@ -116,15 +108,13 @@
   { "nummer": "8718", "name": "HS-RE1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "TIR", "bereich": null },
   { "nummer": "8719", "name": "HS-SZ1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "TIR", "bereich": null },
 
-  // --- VBG – Hubschrauber Vorarlberg ---
-  { "nummer": "8810", "name": "HS-VLBG1", "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "VBG", "bereich": null },  // Vorarlberg
+  { "nummer": "8810", "name": "HS-VLBG1", "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "VBG", "bereich": null },
   { "nummer": "8811", "name": "HS-B1",    "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "VBG", "bereich": null },
   { "nummer": "8812", "name": "HS-BZ1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "VBG", "bereich": null },
   { "nummer": "8813", "name": "HS-DO1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "VBG", "bereich": null },
   { "nummer": "8814", "name": "HS-FK1",   "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "VBG", "bereich": null },
 
-  // --- W – Hubschrauber Wien ---
-  { "nummer": "8911", "name": "HS-WIEN1", "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "W", "bereich": null },     // Wien
+  { "nummer": "8911", "name": "HS-WIEN1", "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "W", "bereich": null },
   { "nummer": "8912", "name": "HS-WIEN2", "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "W", "bereich": null },
   { "nummer": "8913", "name": "HS-WIEN3", "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "W", "bereich": null },
   { "nummer": "8914", "name": "HS-WIEN4", "ordner": "Hubschrauber", "gruppe": "HS", "bundesland": "W", "bereich": null },
