@@ -1,1 +1,5 @@
-
+[
+  { "nummer": "4211", "name": "FW-BM-FUEHR", "bereich": "BM", "ordner": "FW Steiermark" },
+  { "nummer": "4212", "name": "FW-BM-HAUPT", "bereich": "BM", "ordner": "FW Steiermark" },
+  { "nummer": "4201", "name": "FW-BM-ABS-01", "bereich": "BM", "ordner": "FW Steiermark" }
+]
