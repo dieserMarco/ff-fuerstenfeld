@@ -35,18 +35,18 @@ function getFiltered() {
 
   let list = sprechgruppen.slice();
 
-  // Filtern
   list = list.filter(item => {
-    const text = ((item.nummer || '') + ' ' + (item.name || '')).toLowerCase();
-    const matchesSearch = !q || text.includes(q);
+    const nr = String(item.nummer || '');
+    const nm = String(item.name || '');
+    const text = (nr + ' ' + nm).toLowerCase();
 
-    const matchesGruppe = !gruppe || (item.gruppe === gruppe);
-    const matchesBL = !bl || (item.bundesland === bl);
+    const matchesSearch = !q || text.includes(q);
+    const matchesGruppe = !gruppe || item.gruppe === gruppe;
+    const matchesBL = !bl || item.bundesland === bl;
 
     return matchesSearch && matchesGruppe && matchesBL;
   });
 
-  // Sortieren
   list.sort((a, b) => {
     if (sortBy === 'nummer') {
       const na = Number(a.nummer) || 0;
@@ -86,16 +86,18 @@ function render() {
     const mainline = document.createElement('div');
     mainline.className = 'result-mainline';
 
-    const num = document.createElement('div');
-    num.className = 'result-number';
-    num.textContent = item.nummer || '';
+    // Name links
+    const nameEl = document.createElement('div');
+    nameEl.className = 'result-name-left';
+    nameEl.textContent = item.name || '';
 
-    const name = document.createElement('div');
-    name.className = 'result-name';
-    name.textContent = item.name || '';
+    // Nummer rechts
+    const numEl = document.createElement('div');
+    numEl.className = 'result-number-right';
+    numEl.textContent = item.nummer || '';
 
-    mainline.appendChild(num);
-    mainline.appendChild(name);
+    mainline.appendChild(nameEl);
+    mainline.appendChild(numEl);
 
     const meta = document.createElement('div');
     meta.className = 'result-meta';
@@ -132,18 +134,7 @@ function render() {
 }
 
 // Events (live Suche)
-searchInput.addEventListener('input', () => {
-  render();
-});
-
-filterGruppe.addEventListener('change', () => {
-  render();
-});
-
-filterBundesland.addEventListener('change', () => {
-  render();
-});
-
-sortSelect.addEventListener('change', () => {
-  render();
-});
+searchInput.addEventListener('input', render);
+filterGruppe.addEventListener('change', render);
+filterBundesland.addEventListener('change', render);
+sortSelect.addEventListener('change', render);
